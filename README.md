@@ -11,4 +11,7 @@ Busco nuevas oportunidades laborales donde pueda aplicar y expandir mis habilida
 # Tecnologías empleadas
 Html, Css y JavaScript
 
+# Demo del proyecto
+https://sandrycode.github.io/thecoffeehouse/
+
 
