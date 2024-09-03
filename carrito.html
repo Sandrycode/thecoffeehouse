@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El carrito The Coffee House</title>
+
+    <!-- Enlace a fonts -->
+    <!-- font-family: 'Lobster Two', sans-serif; -->
+    <!-- font-weight: 700; -->
+    <!-- font-weight: 400; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- reset css -->
+    <link rel="stylesheet" href="css/style-normalize.css">
+    <!-- Enlace a hoja estilos css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="header1">
+        <h1>Carrito de compras</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="carrito.html">Carrito</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="localizacion.html">Localización</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="carrito2">
+        <section class="cart">
+            <h2>Productos en el Carrito</h2>
+            <ul id="lista-carrito">
+                <!-- los productos del carrito se agregan dinámicamente con javascript -->
+            </ul>
+
+            <button onclick="completarCompra()" class="comprar-btn">Comprar</button>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-legal">
+            <p>&copy; The Coffee House 2024</p>
+            <ul>
+                <li><a href="#">Aviso Legal y Privacidad</a></li>
+                <li><a href="#">Política de Cookies</a></li>
+                <li><a href="#">E-Commerce Tienda Online</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Enlace a javascript -->
+    <script src="js/js.js"></script>
+
+</body>
+
+</html>

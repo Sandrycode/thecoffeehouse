@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacta con The Coffee House</title>
+
+    <!-- Enlace a fonts -->
+    <!-- font-family: 'Lobster Two', sans-serif; -->
+    <!-- font-weight: 700; -->
+    <!-- font-weight: 400; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- reset css -->
+    <link rel="stylesheet" href="css/style-normalize.css">
+    <!-- Enlace a hoja estilos css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="header1">
+        <h1>Contacta con nosotros</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="carrito.html">Carrito</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="localizacion.html">Localización</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="formulario">
+        <section class="contact-form">
+            <h2 class="titulo">Formulario de contacto</h2>
+            <p>Si quieres formar parte de The Coffe House, déjanos tus datos.</p>
+
+            <form action="http://cgi.dominio.es/FormMail.pl" method="post" name="form-contacto" id="form-contacto"
+                enctype="multipart/form-data">
+
+                <div class="campos">
+                    <label for="dato-usuario">
+                        <span class="asterisco">*</span> Nombre (de 2 a 30 caracteres):</label>
+
+                    <input type="text" name="dato-usuario" id="dato-usuario" placeholder="Inserta tu nombre">
+                    <span class="mensajes-error" id="error-nombre"></span>
+                </div>
+
+                <div class="campos">
+                    <label for="dato_email">
+                        <span class="asterisco">*</span> E-mail:</label>
+
+                    <input type="text" name="dato_email" id="dato_email" placeholder="Dinos tu e-mail de contacto">
+                    <span class="mensajes-error" id="error-email"></span>
+                </div>
+
+                <div class="campos">
+                    <label for="dato_telefono">
+                        <span class="asterisco">*</span> Teléfono:</label>
+
+                    <input type="text" name="dato_telefono" id="dato_telefono"
+                        placeholder="Dinos tu teléfono de contacto">
+                    <span class="mensajes-error" id="error-telefono"></span>
+                </div>
+
+                <div class="campos">
+                    <label for="area_tematica">
+                        <span class="asterisco">*</span>
+                        Área temática de la consulta:</label>
+
+                    <select name="area_tematica" id="area_tematica">
+                        <option value="">Elija una opción</option>
+                        <option value="1">Club The Coffe House</option>
+                        <option value="2">Fidelización</option>
+                        <option value="3">Apúntate a nuestra newsletter</option>
+                        <option value="4">Trabaja con nosotros</option>
+                        <option value="5">Información</option>
+                        <option value="6">Buzón de sugerencias</option>
+                    </select>
+                    <span class="mensajes-error" id="error-tematica"></span>
+                </div>
+
+                <div class="campos">
+                    <label for="dato_consulta">
+                        <span class="asterisco">*</span>
+                        Escriba aquí su consulta (máximo 50 caracteres):
+                    </label> <br>
+
+                    <textarea name="dato_consulta" id="dato_consulta" cols="30" rows="10"></textarea><span
+                        class="mensajes-error" id="error-consulta"></span>
+                    <div class="mensaje-caracteres"></div>
+                </div>
+
+                <div class="campos checkbox" id="clausulas">
+                    <input type="checkbox" name="dato_acepto_clausulas" id="dato_acepto_clausulas" value="1">
+                    <label for="dato_acepto_clausulas">
+                        <span class="asterisco">*</span> Acepto las cláusulas de envío
+                    </label>
+                    <a href="#">Leer cláusulas</a>
+
+                    <span class="mensajes-error" id="error-clausulas"></span>
+                </div>
+
+                <div class="campos">
+                    <input type="submit" value="Enviar formulario">
+                </div>
+
+            </form>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-legal">
+
+            <p>&copy; The Coffee House 2024</p>
+
+            <ul>
+                <li><a href="#">Aviso Legal y Privacidad</a></li>
+                <li><a href="#">Política de Cookies</a></li>
+                <li><a href="#">E-Commerce Tienda Online</a></li>
+            </ul>
+
+        </div>
+    </footer>
+
+    <!-- Enlace a javascript -->
+    <script src="js/js.js"></script>
+
+</body>
+
+</html>

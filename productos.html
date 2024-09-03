@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los productos The Coffee House</title>
+
+    <!-- Enlace a fonts -->
+    <!-- font-family: 'Lobster Two', sans-serif; -->
+    <!-- font-weight: 700; -->
+    <!-- font-weight: 400; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- reset css -->
+    <link rel="stylesheet" href="css/style-normalize.css">
+    <!-- Enlace a hoja estilos css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Enlace a mediaqueries responsive -->
+    <link rel="stylesheet" href="css/mediaqueries.css">
+</head>
+
+<body>
+
+    <header class="header1">
+        <h1>Nuestra tienda</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="carrito.html">Carrito</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="localizacion.html">Localización</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h2 class="producto">Cafés y cócteles</h2>
+
+    <main class="product-flex">
+
+        <div class="product">
+            <img src="imagenes/americano.jpg" alt="Café Americano">
+            <h3>Café Americano</h3>
+            <p class="descripcion">El café americano es una bebida elaborada diluyendo un espresso con agua caliente,
+                resultando en un café suave y menos intenso que el espresso, similar en sabor al café filtrado.</p>
+            <p class="precio">Precio: 2€</p>
+            <button onclick="agregarAlCarrito('Café Americano', 2)" class="comprar-btn">Agregar al Carrito</button>
+        </div>
+
+        <div class="product">
+            <img src="imagenes/cafe-leche.jpg" alt="Café con leche">
+            <h3>Café con leche</h3>
+            <p class="descripcion">El café con leche es una bebida que combina partes iguales de café espresso y leche
+                caliente, creando una mezcla suave y cremosa, popular en desayunos y meriendas en varios países.</p>
+            <p class="precio">Precio: 1.60€</p>
+            <button onclick="agregarAlCarrito('Café con leche', 1.60)" class="comprar-btn">Agregar al Carrito</button>
+        </div>
+
+        <div class="product">
+            <img src="imagenes/cappuccino.jpg" alt="Café Cappuccino">
+            <h3>Café Cappuccino</h3>
+            <p class="descripcion">El cappuccino es un café italiano tradicional que combina espresso, leche caliente y
+                espuma de leche en partes iguales. Es conocido mundialmente por su textura cremosa y su distintiva capa
+                de espuma espesa.</p>
+            <p class="precio">Precio: 3€</p>
+            <button onclick="agregarAlCarrito('Café Cappuccino', 3)" class="comprar-btn">Agregar al Carrito</button>
+        </div>
+
+        <div class="product">
+            <img src="imagenes/cortado.jpg" alt="Café Cortado">
+            <h3>Café Cortado</h3>
+            <p class="descripcion">El café cortado es una bebida que mezcla espresso con una pequeña cantidad de leche
+                caliente, suavizando su sabor intenso sin diluirlo demasiado. Es popular en España y Latinoamérica.</p>
+            <p class="precio">Precio: 1.50€</p>
+            <button onclick="agregarAlCarrito('Café Cortado', 1.50)" class="comprar-btn">Agregar al Carrito</button>
+        </div>
+
+        <div class="product">
+            <img src="imagenes/espresso.jpg" alt="Café Espresso">
+            <h3>Café Espresso</h3>
+            <p class="descripcion">El café espresso es una bebida concentrada, obtenida al forzar agua caliente a alta
+                presión a través de café finamente molido. Es fuerte, con un sabor intenso y una capa de crema.</p>
+            <p class="precio">Precio: 1.60€</p>
+            <button onclick="agregarAlCarrito('Café Espresso', 1.60)" class="comprar-btn">Agregar al Carrito</button>
+        </div>
+
+        <div class="product">
+            <img src="imagenes/latte.jpg" alt="Café Latte">
+            <h3>Café Latte</h3>
+            <p class="descripcion">El café latte, conocido como "caffè latte", es una bebida caliente preparada con una
+                base de espresso, leche vaporizada y una fina capa de espuma de leche, apreciada por su suavidad y
+                equilibrio.</p>
+            <p class="precio">Precio: 3.60€</p>
+            <button onclick="agregarAlCarrito('Café Latte', 3.60)" class="comprar-btn">Agregar al Carrito</button>
+        </div>
+
+        <div class="product">
+            <img src="imagenes/macchiato.jpg" alt="Café Macchiato">
+            <h3>Café Macchiato</h3>
+            <p class="descripcion">El café macchiato es un espresso "manchado" con una pequeña cantidad de espuma de
+                leche, creando una bebida fuerte con un toque suave. Es una opción popular para quienes prefieren
+                sabores intensos.</p>
+            <p class="precio">Precio: 3.20€</p>
+            <button onclick="agregarAlCarrito('Café Macchiato', 3.20)" class="comprar-btn">Agregar al Carrito</button>
+        </div>
+
+        <div class="product">
+            <img src="imagenes/mocha.jpg" alt="Café Mocha">
+            <h3>Café Mocha</h3>
+            <p class="descripcion">El café mocha combina espresso, leche vaporizada y jarabe de chocolate, coronado con
+                espuma de leche y a menudo con crema batida y chocolate rallado. Es una deliciosa indulgencia
+                chocolatada.</p>
+            <p class="precio">Precio: 3.10€</p>
+            <button onclick="agregarAlCarrito('Café Mocha', 3.10)" class="comprar-btn">Agregar al Carrito</button>
+        </div>
+
+        <div class="product">
+            <img src="imagenes/vienes.jpg" alt="Café Vienés">
+            <h3>Café Vienés</h3>
+            <p class="descripcion">El café vienés es un espresso servido en una taza con crema batida encima, a menudo
+                con un toque de cacao o canela espolvoreada. Es una opción indulgente y reconfortante para cualquier
+                ocasión.</p>
+            <p class="precio">Precio: 2.30€</p>
+            <button onclick="agregarAlCarrito('Café Vienés', 3.10)" class="comprar-btn">Agregar al Carrito</button>
+        </div>
+
+        <div class="product">
+            <img src="imagenes/mojito.jpg" alt="Cóctel Mojito">
+            <h3>Cóctel Mojito</h3>
+            <p class="descripcion">¡Descubre nuestro Mojito exclusivo que combina el clásico ron blanco BACARDÍ Carta
+                Blanca con la vibrante frescura de la lima recién exprimida, coronándolo con hojas de menta fresca y
+                hielo, para una experiencia única que te transportará a las soleadas costas caribeñas!</p>
+            <p class="precio">Precio: 6.50€</p>
+            <button onclick="agregarAlCarrito('Cóctel Mojito', 6.50)" class="comprar-btn">Agregar al Carrito</button>
+        </div>
+
+        <div class="product">
+            <img src="imagenes/margarita.jpg" alt="Cóctel Margarita">
+            <h3>Cóctel Margarita</h3>
+            <p class="descripcion">Este icónico coctel, originario de México, ofrece el equilibrio perfecto entre el
+                tequila blanco, jugo de limón y licor de naranja. Rematado con un borde de sal en el vaso, cada sorbo es
+                una experiencia auténtica que te transporta a las soleadas tierras mexicanas. ¡Salud!</p>
+            <p class="precio">Precio: 8€</p>
+            <button onclick="agregarAlCarrito('Cóctel Margarita', 8)" class="comprar-btn">Agregar al Carrito</button>
+        </div>
+
+        <div class="product">
+            <img src="imagenes/daiquiri.jpg" alt="Cóctel Daiquiri">
+            <h3>Cóctel Daiquiri</h3>
+            <p class="descripcion">El Daiquiri, con raíces cubanas, ofrece una mezcla refrescante de ron blanco, jugo de
+                limón fresco y jarabe de azúcar, todo adornado con hielo picado y servido en un elegante vaso de cóctel.
+                ¡Una explosión de sabor caribeño en cada sorbo!</p>
+            <p class="precio">Precio: 13€</p>
+            <button onclick="agregarAlCarrito('Cóctel Daiquiri', 13)" class="comprar-btn">Agregar al Carrito</button>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer-legal">
+
+            <p>&copy; The Coffee House 2024</p>
+
+            <ul>
+                <li><a href="#">Aviso Legal y Privacidad</a></li>
+                <li><a href="#">Política de Cookies</a></li>
+                <li><a href="#">E-Commerce Tienda Online</a></li>
+            </ul>
+
+        </div>
+    </footer>
+
+    <!-- Enlace a javascript -->
+    <script src="js/js.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+/**************************************************
+**MEDIAQUERIES RESPONSIVE PÁGINA THE COFFEE HOUSE** 
+**************************************************/
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    .menu .navbar {
+        display: none;
+        width: 100%;
+        background-color: #323232;
+    }
+
+    .menu .navbar ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    .menu .navbar ul li a {
+        width: 100%;
+        padding: 10px;
+        border-bottom: 1px solid #fff;
+    }
+
+    #menu:checked ~ .navbar {
+        display: flex;
+    }
+
+    .menu label {
+        display: block;
+        cursor: pointer;
+        order: 2;
+    }
+
+    .menu-icono {
+        display: block;
+        order: 2;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .header-content p,
+    .coffee-content h2,
+    .txt-p,
+    .services-content p {
+        padding: 0 20px;
+    }
+
+    .coffee-group,
+    .services-group,
+    .blog-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .coffee-1,
+    .services-1,
+    .blog-1 {
+        padding: 20px 0;
+    }
+
+    .general {
+        flex-direction: column;
+    }
+
+    .general-1,
+    .general-2,
+    .general-3 {
+        width: 100%;
+    }
+
+    .header-content h1 {
+        font-size: 50px;
+        line-height: 55px;
+    }
+
+    .coffee-content h2,
+    .services-content h2 {
+        font-size: 40px;
+        line-height: 45px;
+    }
+
+    .header-content p {
+        padding: 0 20px;
+    }
+
+
+    /* MEDIEQUERIES EN PÁGINA PRODUCTOS */
+    .product {
+        width: calc(50% - 20px); /* Ancho de la mitad del contenedor menos el gap */
+    }
+
+    .product img {
+        max-width: 100%;
+    }
+
+    .producto {
+        font-size: 25px; /* Reducimos el tamaño de la fuente del título para móviles */
+    }
+
+    .comprar-btn {
+        margin-left: 0; /* Ajuste de márgenes para móviles */
+    }
+
+}
