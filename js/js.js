@@ -24,7 +24,7 @@ function mostrarCarrito() {
         li.textContent = `${producto.nombre} - ${producto.precio} € x ${producto.cantidad} - Total: ${precioTotalProducto.toFixed(2)} €`;
 
         const botonBorrar = document.createElement('button');
-        botonBorrar.textContent = 'Borrar';
+        botonBorrar.textContent = 'Eliminar producto';
         botonBorrar.addEventListener('click', () => borrarProducto(index));
         li.appendChild(botonBorrar);
         listaCarrito.appendChild(li);
