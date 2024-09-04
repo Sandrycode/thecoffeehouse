@@ -2,44 +2,6 @@
 **JAVASCRIPT PARA PÁGINA THE COFFEE HOUSE** 
 ******************************************/
 
-/* CÓDIGO JS PARA LA PÁGINA INDEX */
-
-// Obtener el input del menú hamburguesa y el menú desplegable
-const menuCheckbox = document.getElementById('menu');
-const navbar = document.querySelector('.navbar');
-
-// Agregar un evento al input del menú hamburguesa para detectar cambios
-menuCheckbox.addEventListener('change', function() {
-    if (this.checked) {
-        // Si el menú está abierto, ocultar el menú hamburguesa
-        document.querySelector('.menu-icono').style.display = 'none';
-    } else {
-        // Si el menú está cerrado, mostrar el menú hamburguesa
-        document.querySelector('.menu-icono').style.display = 'block';
-    }
-});
-
-
-
-/* CÓDIGO JS PARA LA PÁGINA DE PRODUCTOS */
-
-function agregarAlCarrito(nombre, precio) {
-    const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
-    const productoExistenteIndex = carrito.findIndex(item => item.nombre === nombre);
-
-    if (productoExistenteIndex !== -1) {
-        // Si ya está en el carrito, incrementar la cantidad
-        carrito[productoExistenteIndex].cantidad++;
-    } else {
-        // Si no está en el carrito, agregarlo con cantidad 1
-        carrito.push({ nombre, precio, cantidad: 1 });
-    }
-
-    localStorage.setItem('carrito', JSON.stringify(carrito));
-    alert(`El producto "${nombre}" se agregó al carrito.`);
-}
-
-
 
 /* CÓDIGO JS PARA LA PÁGINA DEL CARRITO */
 
@@ -75,20 +37,47 @@ function mostrarCarrito() {
     const totalPagarElement = document.createElement('li');
     totalPagarElement.textContent = `Total a pagar: ${totalCompra.toFixed(2)} €`;
     listaCarrito.appendChild(totalPagarElement);
-}
+};
 
 function borrarProducto(index) {
     const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
-    carrito.splice(index, 1);
+
+    // Reducir la cantidad del producto en 1
+    if (carrito[index].cantidad > 1) {
+        carrito[index].cantidad--;
+    } else {
+        // Si solo queda una unidad, eliminar el producto
+        carrito.splice(index, 1);
+    }
+
     localStorage.setItem('carrito', JSON.stringify(carrito));
     mostrarCarrito();
-}
+};
 
 function completarCompra() {
     alert('¡Compra completada con éxito! Gracias por su compra.');
     localStorage.removeItem('carrito'); // Vaciar carrito
     mostrarCarrito(); // Actualizar lista del carrito (se mostrará vacía)
-}
+};
+
+
+
+/* CÓDIGO JS PARA LA PÁGINA DE PRODUCTOS */
+
+function agregarAlCarrito(nombre, precio) {
+    let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+    // Buscar si el producto ya está en el carrito
+    let productoExistente = carrito.find(item => item.nombre === nombre);
+    if (productoExistente) {
+        // Si ya está en el carrito, incrementar la cantidad
+        productoExistente.cantidad++;
+    } else {
+        // Si no está en el carrito, agregarlo con cantidad 1
+        carrito.push({nombre, precio, cantidad: 1});
+    }
+    localStorage.setItem('carrito', JSON.stringify(carrito));
+    alert(`El producto "${nombre}" se agregó al carrito.`);
+};
 
 
 
@@ -207,3 +196,14 @@ formulario.addEventListener('submit', (evento) => {
 
     formulario.submit();
 });
+
+
+
+
+
+
+
+        
+
+
+   
