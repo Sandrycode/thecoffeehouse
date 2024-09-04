@@ -427,7 +427,17 @@ main.product-flex {
 }
 
 .product img {
-    max-width: 100%;
+    /* max-width: 100%; */
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Opcional: añade bordes redondeados */
+}
+
+.product h3 {
+    margin-top: 15px; /* Separa el <h3> de la imagen unos 15px */
+    font-size: 1.5em; /* Opcional: ajusta el tamaño de la fuente */
+    color: #333; /* Opcional: color del texto */
 }
 
 .descripcion {
@@ -447,6 +457,25 @@ main.product-flex {
     color: #ccc;
     cursor: pointer;
 }
+
+
+/******************************************
+**CONTENIDO DE PÁGINA CARRITO (ANIMACIONES)** 
+******************************************/
+.product img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Opcional: añade bordes redondeados */
+    box-shadow: none; /* Sin sombra por defecto */
+}
+
+.product img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7); /* Sombra gris suave */
+}
+
 
 
 /******************************
