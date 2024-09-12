@@ -3,6 +3,34 @@
 ******************************************/
 
 
+// Función para mostrar el pop-up página productos
+
+function mostrarPopup(mensaje) {
+    // Crear elementos del pop-up
+    const popup = document.createElement('div');
+    popup.className = 'popup';
+
+    const popupContent = document.createElement('div');
+    popupContent.className = 'popup-content';
+
+    const texto = document.createElement('p');
+    texto.textContent = mensaje;
+
+    const botonCerrar = document.createElement('button');
+    botonCerrar.textContent = 'Cerrar';
+    botonCerrar.className = 'popup-cerrar';
+    botonCerrar.addEventListener('click', () => {
+        document.body.removeChild(popup);
+    });
+
+    popupContent.appendChild(texto);
+    popupContent.appendChild(botonCerrar);
+    popup.appendChild(popupContent);
+    document.body.appendChild(popup);
+}
+
+
+
 /* CÓDIGO JS PARA LA PÁGINA DEL CARRITO */
 
 document.addEventListener('DOMContentLoaded', mostrarCarrito);
@@ -55,7 +83,7 @@ function borrarProducto(index) {
 };
 
 function completarCompra() {
-    alert('¡Compra completada con éxito! Gracias por su compra.');
+    mostrarPopup('¡Compra completada con éxito! Gracias por su compra.');
     localStorage.removeItem('carrito'); // Vaciar carrito
     mostrarCarrito(); // Actualizar lista del carrito (se mostrará vacía)
 };
@@ -76,7 +104,7 @@ function agregarAlCarrito(nombre, precio) {
         carrito.push({nombre, precio, cantidad: 1});
     }
     localStorage.setItem('carrito', JSON.stringify(carrito));
-    alert(`El producto "${nombre}" se agregó al carrito.`);
+    mostrarPopup(`El producto "${nombre}" se agregó al carrito.`);
 };
 
 
@@ -196,14 +224,3 @@ formulario.addEventListener('submit', (evento) => {
 
     formulario.submit();
 });
-
-
-
-
-
-
-
-        
-
-
-   
