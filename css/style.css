@@ -31,9 +31,8 @@ body {
 **PÁGINA INDEX** 
 ***************/
 .header {
-    background-image: linear-gradient(
-        rgba(0,0,0,0.6),
-        rgba(0,0,0,0.6)),
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)),
         url(../imagenes/cafe-en-la-mesa.jpg);
     background-position: center bottom;
     background-repeat: no-repeat;
@@ -65,11 +64,11 @@ body {
 }
 
 .menu .navbar ul li a {
-   font-size: 18px;
-   padding: 20px;
-   color:#fffdfc;
-   display: block;
-   font-weight: 600;
+    font-size: 18px;
+    padding: 20px;
+    color: #fffdfc;
+    display: block;
+    font-weight: 600;
 }
 
 .menu .navbar ul li a:hover {
@@ -181,9 +180,9 @@ body {
 }
 
 .coffee-1 h3 {
-   color: #323337;
-   font-size: 20px;
-   margin-bottom: 15px;
+    color: #323337;
+    font-size: 20px;
+    margin-bottom: 15px;
 }
 
 
@@ -191,9 +190,8 @@ body {
 **SECCIÓN SERVICIOS** 
 ********************/
 .services {
-    background-image: linear-gradient(
-        rgba(0,0,0,0.6),
-        rgba(0,0,0,0.6)),
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)),
         url(../imagenes/cafetera-industrial.jpg);
     background-position: center center;
     background-repeat: no-repeat;
@@ -279,10 +277,10 @@ h2 {
     margin-bottom: 20px;
 }
 
-.texto  {
+.texto {
     font-size: 16px;
     color: #414247;
-    margin: 25px 0 45px 0; 
+    margin: 25px 0 45px 0;
 }
 
 
@@ -318,42 +316,42 @@ h2 {
 /******************************** 
 **FOOTER PARA TODAS LAS PÁGINAS** 
 ********************************/
-.footer-legal ul{
+.footer-legal ul {
     display: inline-block;
     list-style-type: none;
     padding: 0;
 }
 
-.footer-legal li{
+.footer-legal li {
     display: inline-block;
     margin-right: 10px;
     padding: 0;
 }
 
-.footer-legal p{
+.footer-legal p {
     display: inline;
     color: #ce967b;
     font-weight: bold;
 }
 
-.footer-legal{ 
+.footer-legal {
     grid-column: 1 / 3;
     padding: 2em;
     background: #404639;
-    text-align: center;	
+    text-align: center;
     color: #9DA298;
 }
 
-.footer-legal a{
+.footer-legal a {
     color: #9DA298;
     text-align: center;
 }
 
-.footer-legal a:hover{
+.footer-legal a:hover {
     color: #FFF;
 }
 
-.footer-legal a:first-of-type{
+.footer-legal a:first-of-type {
     margin-left: 2rem;
 }
 
@@ -407,8 +405,10 @@ h2.producto {
 
 main.product-flex {
     display: flex;
-    flex-wrap: wrap; /* Cambiamos flex-wrap a wrap para forzar el ajuste en filas */
-    justify-content: space-between; /* Añadimos espacio entre las columnas */
+    flex-wrap: wrap;
+    /* Cambiamos flex-wrap a wrap para forzar el ajuste en filas */
+    justify-content: space-between;
+    /* Añadimos espacio entre las columnas */
     gap: 20px;
     padding: 20px;
     margin: 0 auto;
@@ -417,13 +417,17 @@ main.product-flex {
 
 .product {
     display: flex;
-    flex-direction: column; /* Para que los elementos hijos se organicen en columna */
-    justify-content: space-between; /* Para que el contenido principal ocupe el espacio disponible */
+    flex-direction: column;
+    /* Para que los elementos hijos se organicen en columna */
+    justify-content: space-between;
+    /* Para que el contenido principal ocupe el espacio disponible */
     border: 1px solid #ccc;
     padding: 10px;
     text-align: center;
-    width: calc(33.33% - 20px); /* Ancho aproximado de un tercio del contenedor */
-    margin-bottom: 20px; /* Espacio inferior entre filas */
+    width: calc(33.33% - 20px);
+    /* Ancho aproximado de un tercio del contenedor */
+    margin-bottom: 20px;
+    /* Espacio inferior entre filas */
 }
 
 .product img {
@@ -431,17 +435,22 @@ main.product-flex {
     display: block;
     width: 100%;
     height: auto;
-    border-radius: 8px; /* Opcional: añade bordes redondeados */
+    border-radius: 8px;
+    /* Opcional: añade bordes redondeados */
 }
 
 .product h3 {
-    margin-top: 15px; /* Separa el <h3> de la imagen unos 15px */
-    font-size: 1.5em; /* Opcional: ajusta el tamaño de la fuente */
-    color: #333; /* Opcional: color del texto */
+    margin-top: 15px;
+    /* Separa el <h3> de la imagen unos 15px */
+    font-size: 1.5em;
+    /* Opcional: ajusta el tamaño de la fuente */
+    color: #333;
+    /* Opcional: color del texto */
 }
 
 .descripcion {
-    margin: 10px 0;  /* Añadimos un margen superior e inferior */
+    margin: 10px 0;
+    /* Añadimos un margen superior e inferior */
 }
 
 .precio {
@@ -460,20 +469,23 @@ main.product-flex {
 
 
 /******************************************
-**CONTENIDO DE PÁGINA CARRITO (ANIMACIONES)** 
+**CONTENIDO DE PÁGINA CARRITO ANIMACIONES** 
 ******************************************/
 .product img {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: block;
     width: 100%;
     height: auto;
-    border-radius: 8px; /* Opcional: añade bordes redondeados */
-    box-shadow: none; /* Sin sombra por defecto */
+    border-radius: 8px;
+    /* Opcional: añade bordes redondeados */
+    box-shadow: none;
+    /* Sin sombra por defecto */
 }
 
 .product img:hover {
     transform: scale(1.1);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7); /* Sombra gris suave */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+    /* Sombra gris suave */
 }
 
 
@@ -483,7 +495,7 @@ main.product-flex {
 ******************************/
 .carrito2 h2 {
     font-size: 35px;
-    margin-left: 20px; 
+    margin-left: 20px;
 }
 
 .carrito2 li {
@@ -502,6 +514,10 @@ main.product-flex {
     color: #fff;
 }
 
+.carrito2 .comprar-btn:hover {
+    background-color: #694C41;
+}
+
 .carrito2 button {
     padding: 5px;
     margin-left: 10px;
@@ -512,11 +528,72 @@ main.product-flex {
     cursor: pointer;
 }
 
+.boton-enlace {
+    display: inline-block; /* Hace que el botón solo ocupe el espacio necesario para el texto */
+    padding: 10px 20px; /* Ajusta el padding según el diseño que desees */
+    margin-left: 20px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-family: sans-serif;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #b8a713;
+    border-radius: 5px;
+    border: none;
+    white-space: nowrap; /* Asegura que el texto no se rompa en varias líneas */
+}
+
+.boton-enlace:hover {
+    background-color: #c3b534;
+}
+
+
+
+/* Estilos para el pop-up */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+}
+
+.popup-cerrar {
+    background-color: #ce967b;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.popup-cerrar:hover {
+    background-color: #ebad8d;
+}
+
+
 
 /********************************
 **CONTENIDO DE PÁGINA CONTACTO** 
 ********************************/
-body, html {
+body,
+html {
     height: 100%;
     margin: 0;
     display: flex;
@@ -534,8 +611,10 @@ body, html {
     margin-top: 5px;
 }
 
-.header1, footer {
-    flex-shrink: 0; /* Previene que se encojan */
+.header1,
+footer {
+    flex-shrink: 0;
+    /* Previene que se encojan */
 }
 
 /* Centrado del formulario */
@@ -554,7 +633,8 @@ main.formulario {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 600px; /* Ajusta el ancho máximo según sea necesario */
+    max-width: 600px;
+    /* Ajusta el ancho máximo según sea necesario */
 }
 
 .contact-form p {
