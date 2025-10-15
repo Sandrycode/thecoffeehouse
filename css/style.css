@@ -523,7 +523,7 @@ main.product-flex {
     margin-left: 10px;
     border: none;
     border-radius: 5px;
-    background-color: #694C41;
+    background-color: #f9fafc;
     color: #ccc;
     cursor: pointer;
 }
@@ -733,3 +733,4 @@ main.formulario {
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
