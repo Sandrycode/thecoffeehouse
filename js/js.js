@@ -52,7 +52,7 @@ function mostrarCarrito() {
         li.textContent = `${producto.nombre} - ${producto.precio} € x ${producto.cantidad} - Total: ${precioTotalProducto.toFixed(2)} €`;
 
         const botonBorrar = document.createElement('button');
-        botonBorrar.textContent = 'Eliminar producto';
+        botonBorrar.innerHTML = '<span style="position:relative; display:inline-block;"><img src="imagenes/cubo_basura.png" alt="Eliminar" style="width:20px; height:20px; transition:transform 0.2s;" onmouseover="this.style.transform=\'scale(1.3)\'; this.nextElementSibling.style.visibility=\'visible\'" onmouseout="this.style.transform=\'scale(1)\'; this.nextElementSibling.style.visibility=\'hidden\'"><span style="visibility:hidden; background:white; color:black; font-size:12px; text-align:center; border-radius:4px; padding:2px 6px; position:absolute; z-index:1; top:50%; left:110%; transform:translateY(-50%); white-space:nowrap;">Eliminar producto</span></span>';
         botonBorrar.addEventListener('click', () => borrarProducto(index));
         li.appendChild(botonBorrar);
         listaCarrito.appendChild(li);
@@ -224,3 +224,4 @@ formulario.addEventListener('submit', (evento) => {
 
     formulario.submit();
 });
+
